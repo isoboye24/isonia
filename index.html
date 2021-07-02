@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
+    <script type="module" defer src="js/variables.js"></script>
+    <script type="module" defer src="js/script.js"></script>
+
     <title>Isonia &mdash; Your all-in-one booking app</title>
   </head>
   <body>
@@ -46,8 +49,8 @@
       <div class="content">
         <nav class="sidebar">
           <ul class="side-nav">
-            <li class="side-nav__item side-nav__item--active">
-              <a href="" class="side-nav__link">
+            <li class="side-nav__item side-nav__item--active hotel">
+              <a href="#" class="side-nav__link">
                 <svg class="side-nav__icon">
                   <use xlink:href="img/sprite.svg#icon-home"></use>
                 </svg>
@@ -55,8 +58,8 @@
               </a>
             </li>
 
-            <li class="side-nav__item">
-              <a href="" class="side-nav__link">
+            <li class="side-nav__item flight">
+              <a href="#" class="side-nav__link">
                 <svg class="side-nav__icon">
                   <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
                 </svg>
@@ -64,8 +67,8 @@
               </a>
             </li>
 
-            <li class="side-nav__item">
-              <a href="" class="side-nav__link">
+            <li class="side-nav__item car-rental">
+              <a href="#" class="side-nav__link">
                 <svg class="side-nav__icon">
                   <use xlink:href="img/sprite.svg#icon-key"></use>
                 </svg>
@@ -73,8 +76,8 @@
               </a>
             </li>
 
-            <li class="side-nav__item">
-              <a href="" class="side-nav__link">
+            <li class="side-nav__item tours">
+              <a href="#" class="side-nav__link">
                 <svg class="side-nav__icon">
                   <use xlink:href="img/sprite.svg#icon-map"></use>
                 </svg>
@@ -87,13 +90,13 @@
         <main class="hotel-view">
           <div class="gallery">
             <figure class="gallery__item">
-              <img src="img/hotel-1.jpg" alt="Hotel photo 1" class="gallery__photo" />
+              <img src="img/hotel-1.jpg" alt="Hotel photo 1" class="gallery__photo gallery__photo-1" />
             </figure>
             <figure class="gallery__item">
-              <img src="img/hotel-2.jpg" alt="Hotel photo 1" class="gallery__photo" />
+              <img src="img/hotel-2.jpg" alt="Hotel photo 1" class="gallery__photo gallery__photo-2" />
             </figure>
             <figure class="gallery__item">
-              <img src="img/hotel-3.jpg" alt="Hotel photo 1" class="gallery__photo" />
+              <img src="img/hotel-3.jpg" alt="Hotel photo 1" class="gallery__photo gallery__photo-3" />
             </figure>
           </div>
 
@@ -121,7 +124,7 @@
               <svg class="overview__icon-location">
                 <use xlink:href="img/sprite.svg#icon-location-pin"></use>
               </svg>
-              <button class="btn-inline">Irpen, Ukraine</button>
+              <button class="btn-inline btn-inline-text">Irpen, Ukraine</button>
             </div>
 
             <div class="overview__rating">
@@ -132,65 +135,69 @@
 
           <div class="details">
             <div class="description">
-              <p class="paragraph">
+              <p class="paragraph paragraph-1">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione
                 sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
               </p>
-              <p class="paragraph">
+              <p class="paragraph paragraph-2">
                 Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore
                 iure aliquid aliquam.
               </p>
               <ul class="list">
-                <li class="list__item">Close to the beach</li>
-                <li class="list__item">Breakfast included</li>
-                <li class="list__item">Free airport shuttle</li>
-                <li class="list__item">Free WiFi in all rooms</li>
-                <li class="list__item">Air conditioning and heating</li>
-                <li class="list__item">Pets allowed</li>
-                <li class="list__item">We speak all languages</li>
-                <li class="list__item">Perfect for families</li>
+                <li class="list__item list__item-1">Close to the beach</li>
+                <li class="list__item list__item-2">Breakfast included</li>
+                <li class="list__item list__item-3">Free airport shuttle</li>
+                <li class="list__item list__item-4">Free WiFi in all rooms</li>
+                <li class="list__item list__item-5">Air conditioning and heating</li>
+                <li class="list__item list__item-6">Pets allowed</li>
+                <li class="list__item list__item-7">We speak all languages</li>
+                <li class="list__item list__item-8">Perfect for families</li>
               </ul>
 
               <div class="recommend">
                 <p class="recommend__count">Anu and 5 other friends recommend this hotel.</p>
                 <div class="recommend__friends">
-                  <img src="img/user-10.jpeg" alt="Friend 1" class="recommend__photo" />
-                  <img src="img/user-4.jpg" alt="Friend 2" class="recommend__photo" />
-                  <img src="img/user-9.jpg" alt="Friend 3" class="recommend__photo" />
-                  <img src="img/user-5.jpg" alt="Friend 4" class="recommend__photo" />
-                  <img src="img/user-6.jpg" alt="Friend 5" class="recommend__photo" />
-                  <img src="img/user-8.jpg" alt="Friend 6" class="recommend__photo" />
+                  <img src="img/user-10.jpeg" alt="Friend 1" class="recommend__photo recommend__photo-1" />
+                  <img src="img/user-4.jpg" alt="Friend 2" class="recommend__photo recommend__photo-2" />
+                  <img src="img/user-9.jpg" alt="Friend 3" class="recommend__photo recommend__photo-3" />
+                  <img src="img/user-5.jpg" alt="Friend 4" class="recommend__photo recommend__photo-4" />
+                  <img src="img/user-6.jpg" alt="Friend 5" class="recommend__photo recommend__photo-5" />
+                  <img src="img/user-8.jpg" alt="Friend 6" class="recommend__photo recommend__photo-6" />
+                  <img src="img/user-8.jpg" alt="Friend 7" class="recommend__photo recommend__photo-7 hidden" />
+                  <img src="img/user-8.jpg" alt="Friend 8" class="recommend__photo recommend__photo-8 hidden" />
+                  <img src="img/user-8.jpg" alt="Friend 9" class="recommend__photo recommend__photo-9 hidden" />
+                  <img src="img/user-8.jpg" alt="Friend 10" class="recommend__photo recommend__photo-10 hidden" />
                 </div>
               </div>
             </div>
 
             <div class="user-reviews">
               <figure class="review">
-                <blockquote class="review__text">
+                <blockquote class="review__text review__text-1">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi,
                   totam, itaque officia ex.
                 </blockquote>
                 <figcaption class="review__user">
-                  <img src="img/user-7.jpg" alt="User 1" class="review__photo" />
+                  <img src="img/user-7.jpg" alt="User 1" class="review__photo review__photo-1" />
                   <div class="review__user-box">
-                    <p class="review__user-name">Anu Ojo</p>
-                    <p class="review__user-date">20 Sep 2020</p>
+                    <p class="review__user-name review__user-name-1">Anu Ojo</p>
+                    <p class="review__user-date review__user-date-1">20 Sep 2020</p>
                   </div>
-                  <div class="review__rating">8.2</div>
+                  <div class="review__rating review__rating-1">8.2</div>
                 </figcaption>
               </figure>
 
               <figure class="review">
-                <blockquote class="review__text">
+                <blockquote class="review__text review__text-2">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
                 </blockquote>
                 <figcaption class="review__user">
-                  <img src="img/user-2.jpg" alt="User 2" class="review__photo" />
+                  <img src="img/user-2.jpg" alt="User 2" class="review__photo review__photo-2" />
                   <div class="review__user-box">
-                    <p class="review__user-name">John Collins</p>
-                    <p class="review__user-date">07 March 2021</p>
+                    <p class="review__user-name review__user-name-2">Sarah Collins</p>
+                    <p class="review__user-date review__user-date-2">07 March 2021</p>
                   </div>
-                  <div class="review__rating">8.7</div>
+                  <div class="review__rating review__rating-2">8.7</div>
                 </figcaption>
               </figure>
               <button class="btn-inline">Show all <span>&rarr;</span></button>
@@ -206,7 +213,5 @@
         </main>
       </div>
     </div>
-
-    <script src="js/script.js"></script>
   </body>
 </html>
